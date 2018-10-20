@@ -7,11 +7,13 @@ namespace Pets
 {
     public partial class App : Application
     {
+        public LoginPage LoginPage { get; }
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()
